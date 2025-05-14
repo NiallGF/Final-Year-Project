@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divHDRHEO5S69DB68Z"></div>
+        <div class="lime top_div" id="top_div65PCMZEHUO211B9"></div>
         
         <script>
-        var top_div = d3.select('#top_divHDRHEO5S69DB68Z').classed('lime top_div', true);
+        var top_div = d3.select('#top_div65PCMZEHUO211B9').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["No Diabetes", "Diabetes"], [0.33381385360280047, 0.6661861463971995]);
+            var pp = new lime.PredictProba(pp_svg, ["No Diabetes", "Diabetes"], [0.7586184072875151, 0.24138159271248494]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["No Diabetes", "Diabetes"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["0.28 < RIDAGEYR <= 0.88", 0.13669492560172017], ["AUQ054 > 0.93", 0.05492991224755614], ["-0.53 < BMXWAIST <= 0.07", -0.050008745612256676], ["HUQ010 > 0.48", 0.048429617814647094], ["-0.50 < BMXARMC <= 0.02", -0.0254628922681406], ["RXQ033 <= -0.68", 0.02171837262759639], ["-0.51 < BMXBMI <= -0.05", 0.019474253796145174], ["-0.55 < DMDHHSIZ <= 0.71", -0.010969451444680464], ["-0.57 < OHQ845 <= 0.26", 0.00803487414694287], ["-1.30 < IMQ011 <= 0.80", 0.0059414376886167]], 1, exp_div);
+                exp.show([["-1.02 < RIDAGEYR <= 0.28", -0.08002761056474404], ["0.07 < BMXWAIST <= 0.68", 0.06647716349960442], ["BMXARML > 0.73", 0.03344934584443356], ["HUQ010 <= -0.48", -0.03199357459246874], ["0.02 < BMXARMC <= 0.65", 0.020982840917613335], ["-0.68 < RXQ033 <= 1.47", -0.019861033723561728], ["BMXWT > 0.64", 0.018391914403952804], ["-0.51 < BMXBMI <= -0.05", 0.01601091503187903], ["IMQ011 <= -1.30", -0.012699003703743486], ["DMDHHSIZ <= -0.55", 0.01230057309323177]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_tabular([["RIDAGEYR", "0.84", 0.13669492560172017], ["AUQ054", "2.80", 0.05492991224755614], ["BMXWAIST", "-0.33", -0.050008745612256676], ["HUQ010", "2.41", 0.048429617814647094], ["BMXARMC", "-0.15", -0.0254628922681406], ["RXQ033", "-0.68", 0.02171837262759639], ["BMXBMI", "-0.28", 0.019474253796145174], ["DMDHHSIZ", "0.08", -0.010969451444680464], ["OHQ845", "0.26", 0.00803487414694287], ["IMQ011", "0.80", 0.0059414376886167]], 1, raw_div);
+            exp.show_raw_tabular([["RIDAGEYR", "-0.45", -0.08002761056474404], ["BMXWAIST", "0.47", 0.06647716349960442], ["BMXARML", "1.95", 0.03344934584443356], ["HUQ010", "-0.48", -0.03199357459246874], ["BMXARMC", "0.22", 0.020982840917613335], ["RXQ033", "1.47", -0.019861033723561728], ["BMXWT", "0.86", 0.018391914403952804], ["BMXBMI", "-0.08", 0.01601091503187903], ["IMQ011", "-1.30", -0.012699003703743486], ["DMDHHSIZ", "-0.55", 0.01230057309323177]], 1, raw_div);
         
         </script>
         </body></html>
